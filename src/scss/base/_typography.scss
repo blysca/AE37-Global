@@ -1,0 +1,76 @@
+html {
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+  text-align: left;
+  quotes: "“" "”";
+}
+
+body {
+  background-color: $wt;
+  font-family: $font-sans;
+  font-weight: 400;
+  line-height: 1.45;
+  color: $bl;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0 0 1rem;
+  font-family: $font-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209rem;
+
+  @include mq(s, max) {
+    font-size: 3.052rem;
+  }
+}
+
+h2 {
+  font-size: 3.157rem;
+
+  @include mq(s, max) {
+    font-size: 2.441rem;
+  }
+}
+
+h3 {
+  font-size: 2.369rem;
+  @include mq(s, max) {
+    font-size: 1.953rem;
+  }
+}
+
+h4 {
+  font-size: 1.777rem;
+  @include mq(s, max) {
+    font-size: 1.563rem;
+  }
+}
+
+h5 {
+  font-size: 1.333rem;
+  @include mq(s, max) {
+    font-size: 1.25rem;
+  }
+}
+
+small, .text_small {
+  font-size: 0.75rem;
+  @include mq(s, max) {
+    font-size: 0.8rem;
+  }
+}

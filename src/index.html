@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>Webpack App</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Vollkorn&display=swap" rel="stylesheet">
+  <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">EN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">RU</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<header class="_h j-header bg-sz-cvr bg-p-cntr" style="background-image:
+url('https://picsum.photos/1200/2300?grayscale')">
+  <div class="py-5 container d-flex justify-content-center flex-column align-items-center">
+    <div class="row">
+      <div class="col col-auto text-center text-white">
+        <h2>CREATING THE FUTURE TOGETHER</h2>
+        <p>We foster innovation and work together to find and grow breakthroughs all over the world</p>
+        <i class="material-icons"> arrow_downward </i>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="wwd">
+    <div class="py-5 container">
+      <div class="row">
+        <div class="col text-center">
+          <h1>What we do</h1>
+          <hr class="mx-auto w-25 border-success">
+          <p>We manage funds that invest in the world's most promising companies with disruptive ideas and great return
+            potential. We invest in early and growth stage startup companies in various sectors. Our portfolio companies
+            represent key players of the startup industry, top incubator graduates and promising teams.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-12">
+          <div class="card-deck mt-5">
+            <div class="card bg-transparent border-0 text-center">
+              <img src="https://picsum.photos/80/80?grayscale" class="card-img-top rounded-circle w-50 mx-auto"
+                   alt="Card title">
+              <div class="card-body">
+                <h4 class="card-title mt-0">Card title</h4>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card bg-transparent border-0 text-center">
+              <img src="https://picsum.photos/80/80?grayscale" class="card-img-top rounded-circle w-50 mx-auto"
+                   alt="Card title">
+              <div class="card-body">
+                <h4 class="card-title mt-0">Card title</h4>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card bg-transparent border-0 text-center">
+              <img src="https://picsum.photos/80/80?grayscale" class="card-img-top rounded-circle w-50 mx-auto"
+                   alt="Card title">
+              <div class="card-body">
+                <h4 class="card-title mt-0">Card title</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-image: url('https://picsum.photos/1600/2300?grayscale')"
+           class="qt bg-sz-cvr bg-p-cntr bg-attchmnt-scrll jumbotron jumbotron-fluid py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 offset-sm-6 col-sm-6 text-white">
+          <h3>IGOR RYABENKIY</h3>
+          <hr class="w-50 border-success ml-0">
+          <h4>GENERAL PARTNER</h4>
+          <p class="lead">"…AltaIR experience and infastucture let us invest in the best projects on early stage
+            providing effective help for founders and good return for partners."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ppl">
+    <div class="py-5 container">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <h1 class="text-center">People</h1>
+          <hr class="mx-auto w-25 border-success">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col col-xs-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+          <div class="card border-0 rounded-0">
+            <img src="https://picsum.photos/900/1200?grayscale" class="card-img-top shadow-sm" alt="Dr. IGOR RYABENKIY">
+            <div class="card-body">
+              <h5 class="card-title">Dr. IGOR RYABENKIY</h5>
+              <p class="card-text">General Partner</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-xs-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+          <div class="card border-0 rounded-0">
+            <img src="https://picsum.photos/900/1200?grayscale" class="card-img-top shadow-sm" alt="Dr. IGOR RYABENKIY">
+            <div class="card-body">
+              <h5 class="card-title">Dr. IGOR RYABENKIY</h5>
+              <p class="card-text">General Partner</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-xs-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+          <div class="card border-0 rounded-0">
+            <img src="https://picsum.photos/900/1200?grayscale" class="card-img-top shadow-sm" alt="Dr. IGOR RYABENKIY">
+            <div class="card-body">
+              <h5 class="card-title">Dr. IGOR RYABENKIY</h5>
+              <p class="card-text">General Partner</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-xs-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+          <div class="card border-0 rounded-0">
+            <img src="https://picsum.photos/900/1200?grayscale" class="card-img-top shadow-sm" alt="Dr. IGOR RYABENKIY">
+            <div class="card-body">
+              <h5 class="card-title">Dr. IGOR RYABENKIY</h5>
+              <p class="card-text">General Partner</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-xs-6 col-sm-4 col-md-3 col-xl-2 mb-4">
+          <div class="card border-0 rounded-0">
+            <img src="https://picsum.photos/900/1200?grayscale" class="card-img-top shadow-sm" alt="Dr. IGOR RYABENKIY">
+            <div class="card-body">
+              <h5 class="card-title">Dr. IGOR RYABENKIY</h5>
+              <p class="card-text">General Partner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="strs-xts bg-dark">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 mb-5">
+          <h1 class="text-center text-white">Stars & Exits highlights</h1>
+          <hr class="mx-auto w-25 border-white">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-sm-3 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="https://picsum.photos/600/400?grayscale" class="card-img-top" alt="miro">
+            <div class="card-body">
+              <h4>Miro</h4>
+              <p class="card-text"> Miro is an online collaboration and whiteboarding platform for teams and
+                organizations of all sizes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-sm-3 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="https://picsum.photos/600/400?grayscale" class="card-img-top" alt="miro">
+            <div class="card-body">
+              <h4>Miro</h4>
+              <p class="card-text"> Miro is an online collaboration and whiteboarding platform for teams and
+                organizations of all sizes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-sm-3 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="https://picsum.photos/600/400?grayscale" class="card-img-top" alt="miro">
+            <div class="card-body">
+              <h4>Miro</h4>
+              <p class="card-text"> Miro is an online collaboration and whiteboarding platform for teams and
+                organizations of all sizes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-sm-3 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="https://picsum.photos/600/400?grayscale" class="card-img-top" alt="miro">
+            <div class="card-body">
+              <h4>Miro</h4>
+              <p class="card-text"> Miro is an online collaboration and whiteboarding platform for teams and
+                organizations of all sizes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-sm-3 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="https://picsum.photos/600/400?grayscale" class="card-img-top" alt="miro">
+            <div class="card-body">
+              <h4>Miro</h4>
+              <p class="card-text"> Miro is an online collaboration and whiteboarding platform for teams and
+                organizations of all sizes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-sm-3 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="https://picsum.photos/600/400?grayscale" class="card-img-top" alt="miro">
+            <div class="card-body">
+              <h4>Miro</h4>
+              <p class="card-text"> Miro is an online collaboration and whiteboarding platform for teams and
+                organizations of all sizes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-sm-3 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="https://picsum.photos/600/400?grayscale" class="card-img-top" alt="miro">
+            <div class="card-body">
+              <h4>Miro</h4>
+              <p class="card-text"> Miro is an online collaboration and whiteboarding platform for teams and
+                organizations of all sizes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 px-sm-3 mb-4">
+          <div class="card border-0 shadow-sm">
+            <img src="https://picsum.photos/600/400?grayscale" class="card-img-top" alt="miro">
+            <div class="card-body">
+              <h4>Miro</h4>
+              <p class="card-text"> Miro is an online collaboration and whiteboarding platform for teams and
+                organizations of all sizes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="fr">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 bg-sz-cvr bg-p-cntr" style="background-image:
+        url('https://picsum.photos/1200/2300?grayscale')"></div>
+        <div class="col-12 col-sm-6 p-4 p-sm-5">
+          <div class="fr-content">
+            <h3>For Investors</h3>
+            <hr class="w-50">
+            <p class="pr-sm-5">We offer Venture Investors and Business Angels unique opportunities by joining our
+              successful
+              investments and sharing our expertise in venture capital financing, startup growth, and acceleration.</p>
+            <a href="google.com" target="_blank" class="btn bg-primary text-white btn-lg rounded-pill">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 p-4 p-sm-5 order-2 order-sm-0  ">
+          <div class="fr-content">
+            <h3>For Investors</h3>
+            <hr class="w-50">
+            <p class="pr-sm-5">We offer Venture Investors and Business Angels unique opportunities by joining our
+              successful
+              investments and sharing our expertise in venture capital financing, startup growth, and acceleration.</p>
+            <a href="google.com" target="_blank" class="btn bg-primary text-white btn-lg rounded-pill">Learn More</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 bg-sz-cvr bg-p-cntr order-1 " style="background-image:
+        url('https://picsum.photos/1200/2300?grayscale')"></div>
+      </div>
+    </div>
+  </section>
+  <section class="prtfl-nws bg-dark">
+    <div class="py-5 container">
+      <div class="row">
+        <div class="col text-center text-white">
+          <h1>Portfolio news</h1>
+          <hr class="mx-auto w-25 border-white">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-12 col-sm-6 col-lg-4">
+          <a href="/" target="_blank" class="card border-0 text-decoration-none text-body mb-4">
+            <img src="https://picsum.photos/400/400?grayscale" class="card-img-top"
+                 alt="Card title">
+            <div class="card-body">
+              <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
+              <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+                safety hazards.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-6 col-lg-4">
+          <a href="/" target="_blank" class="card border-0 text-decoration-none text-body mb-4">
+            <img src="https://picsum.photos/400/400?grayscale" class="card-img-top"
+                 alt="Card title">
+            <div class="card-body">
+              <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
+              <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+                safety hazards.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-6 col-lg-4">
+          <a href="/" target="_blank" class="card border-0 text-decoration-none text-body mb-4">
+            <img src="https://picsum.photos/400/400?grayscale" class="card-img-top"
+                 alt="Card title">
+            <div class="card-body">
+              <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
+              <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+                safety hazards.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-6 col-lg-4">
+          <a href="/" target="_blank" class="card border-0 text-decoration-none text-body mb-4">
+            <img src="https://picsum.photos/400/400?grayscale" class="card-img-top"
+                 alt="Card title">
+            <div class="card-body">
+              <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
+              <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+                safety hazards.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-6 col-lg-4">
+          <a href="/" target="_blank" class="card border-0 text-decoration-none text-body mb-4">
+            <img src="https://picsum.photos/400/400?grayscale" class="card-img-top"
+                 alt="Card title">
+            <div class="card-body">
+              <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
+              <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+                safety hazards.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-6 col-lg-4">
+          <a href="/" target="_blank" class="card border-0 text-decoration-none text-body mb-4">
+            <img src="https://picsum.photos/400/400?grayscale" class="card-img-top"
+                 alt="Card title">
+            <div class="card-body">
+              <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
+              <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+                safety hazards.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cntcts py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2>CONTACT US</h2>
+          <hr class="w-25">
+        </div>
+        <div class="col-12 col-sm-8 offset-sm-2 text-center">
+          <h4>For Startups</h4>
+          <p>We are always looking for teams with strongly motivated co-founders with a mix of IT and business/sales experience and a vision of how to make significant impact in a large market.</p>
+          <p><a href="mailto:">start@altair.vc</a></p>
+        </div>
+        <div class="col-12 offset-sm-4 col-sm-4 mt-5">
+          <h4 class="text-center">For other inquiries</h4>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Second default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+              <label class="form-check-label" for="exampleRadios3">
+                Disabled radio
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="py-5 bg-primary text-success">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-12 col-md-4 text-md-left">
+        <h3>AE37Global</h3>
+      </div>
+      <div class="col-12 col-md-4">
+        <p>
+          &copy; Copyright 2019 AE37Global - All Rights Reserved</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <ul class="list-unstyled p-0 m-0 d-flex justify-content-center justify-content-md-end">
+          <li>
+            <a  class="p-3" href="">fb</a>
+          </li>
+          <li>
+            <a href=""  class="p-3">ln</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

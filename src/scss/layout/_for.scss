@@ -1,0 +1,13 @@
+.fr {
+  .col-12{
+    //min-height: 50vh;
+    max-height: 560px;
+  }
+
+  &-content {
+    @include mq(m) {
+      max-width: 360px;
+      @include push--auto;
+    }
+  }
+}
