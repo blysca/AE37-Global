@@ -1,3 +1,4 @@
+// import "./bootstrap.min.css"
 import "./styles.scss";
 
 document.addEventListener("DOMContentLoaded", function(event) {
