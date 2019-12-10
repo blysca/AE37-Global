@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta content="ie=edge" http-equiv="x-ua-compatible">
   <title>Webpack App</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Vollkorn&display=swap" rel="stylesheet">
   <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
-<!--  <link rel="stylesheet" href="./bootstrap.min.css">-->
+  <!--  <link rel="stylesheet" href="./bootstrap.min.css">-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
           integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
           crossorigin="anonymous"></script>
@@ -19,8 +21,11 @@
           integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
           crossorigin="anonymous"></script>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<body class="position-relative"
+      data-spy="scroll" data-target="#_nav">
+<nav
+  id="_nav"
+  class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
           aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,83 +34,95 @@
 
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#_ww-do">What we do</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#_m-partner">Managing Partner</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#_p-companies">Portfolio companies</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#_for">For Investors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#_p-news">Portfolio News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#_contacts">Contacts</a>
       </li>
     </ul>
-    <ul class="navbar-nav">
+    <!--<ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="#">EN</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">RU</a>
       </li>
-    </ul>
+    </ul>-->
   </div>
 </nav>
-<header class="_h j-header bg-sz-cvr bg-p-cntr" style="background-image:
+<main data-spy="scroll" data-target="#_nav" data-offset="0">
+  <header
+    id="_header"
+    class="_h j-header bg-sz-cvr bg-p-cntr" style="background-image:
 url('https://picsum.photos/1200/2300?grayscale')">
-  <div class="py-5 container d-flex justify-content-center flex-column align-items-center">
-    <div class="row">
-      <div class="col col-auto text-center text-white">
-        <h2>CREATING THE FUTURE TOGETHER</h2>
-        <p>We foster innovation and work together to find and grow breakthroughs all over the world</p>
-        <i class="material-icons"> arrow_downward </i>
+    <div class="py-5 container d-flex justify-content-center flex-column align-items-center">
+      <div class="row">
+        <div class="col col-auto text-center text-white">
+          <h2>CREATING THE FUTURE TOGETHER</h2>
+          <p>We foster innovation and work together to find and grow breakthroughs throughout the world</p>
+          <a href="#_ww-do">
+            <i class="material-icons"> arrow_downward </i>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
-<main>
-  <section class="wwd">
+  </header>
+  <section id="_ww-do" class="wwd">
     <div class="py-5 container">
       <div class="row">
         <div class="col text-center">
           <h1>What we do</h1>
           <hr class="mx-auto w-25 border-success">
-          <p>We manage funds that invest in the world's most promising companies with disruptive ideas and great return
-            potential. We invest in early and growth stage startup companies in various sectors. Our portfolio companies
-            represent key players of the startup industry, top incubator graduates and promising teams.</p>
+          <p> We provide consultancy services to the world’s most promising companies with disruptive ideas, strong
+            founders, and great return potential for investors. Our goal is to boost the growth of any business at the
+            most challenging moment. We also invest in early and growth stage startup companies in various sectors. We
+            help our clients to grow the sales, hire best industry professional, complete the fundraising process, and
+            structure the upcoming deals.</p>
         </div>
       </div>
       <div class="row">
         <div class="col col-12">
           <div class="card-deck mt-5">
             <div class="card bg-transparent border-0 text-center">
-              <img src="https://picsum.photos/80/80?grayscale" class="card-img-top rounded-circle w-50 mx-auto"
-                   alt="Card title">
+              <!--<img src="https://picsum.photos/80/80?grayscale" class="card-img-top rounded-circle w-50 mx-auto"
+                   alt="Card title">-->
               <div class="card-body">
-                <h4 class="card-title mt-0">Card title</h4>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h4 class="card-title mt-0"> Sectors</h4>
+                <p class="card-text"> FoodTech, FinTech, MedTech, Consumer Internet, E-commerce</p>
+                <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
               </div>
             </div>
             <div class="card bg-transparent border-0 text-center">
-              <img src="https://picsum.photos/80/80?grayscale" class="card-img-top rounded-circle w-50 mx-auto"
-                   alt="Card title">
+              <!--<img src="https://picsum.photos/80/80?grayscale" class="card-img-top rounded-circle w-50 mx-auto"
+                   alt="Card title">-->
               <div class="card-body">
-                <h4 class="card-title mt-0">Card title</h4>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h4 class="card-title mt-0"> Expertise</h4>
+                <p class="card-text">Financing Business Management, Deal Structuring, Financial Planning, Technological
+                  Development, Project Management</p>
+                <!--                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
               </div>
             </div>
             <div class="card bg-transparent border-0 text-center">
-              <img src="https://picsum.photos/80/80?grayscale" class="card-img-top rounded-circle w-50 mx-auto"
-                   alt="Card title">
+              <!--<img src="https://picsum.photos/80/80?grayscale" class="card-img-top rounded-circle w-50 mx-auto"
+                   alt="Card title">-->
               <div class="card-body">
-                <h4 class="card-title mt-0">Card title</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h4 class="card-title mt-0">
+                  Geography</h4>
+                <p class="card-text">USA, Canada, Great Britain, Europe</p>
+                <!--                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
               </div>
             </div>
           </div>
@@ -113,21 +130,37 @@ url('https://picsum.photos/1200/2300?grayscale')">
       </div>
     </div>
   </section>
-  <section style="background-image: url('https://picsum.photos/1600/2300?grayscale')"
+  <section id="_m-partner" style="background-image: url('https://picsum.photos/1600/2300?grayscale')"
            class="qt bg-sz-cvr bg-p-cntr bg-attchmnt-scrll jumbotron jumbotron-fluid py-5">
     <div class="container py-5">
       <div class="row">
         <div class="col-12 offset-sm-6 col-sm-6 text-white">
           <h3>IGOR RYABENKIY</h3>
           <hr class="w-50 border-success ml-0">
-          <h4>GENERAL PARTNER</h4>
-          <p class="lead">"…AltaIR experience and infastucture let us invest in the best projects on early stage
-            providing effective help for founders and good return for partners."</p>
+          <h4>Managing Partner: Olexandr Chernyak </h4>
+          <p class="lead">Bio: AE37 Global is the company, founded and managed by Olexandr Chernyak, who is a well-known
+            entrepreneur and investor in the industry. Olexandr’s past experience includes founding and managing
+            Carprice and Smartprice. These two companies became the leaders of its industries in Russia and CIS
+            countries. Carprice employs more than 700 people and has an annual revenue of $250m, its Japanese subsidiary
+            was successfully sold to Japanese company Rakuten. Smartprice is the leader in ever-green smartphone
+            reselling market of Russia. The company sells almost 500,000 smartphones per year and employs more than 130
+            people.
+          </p>
+          <p class="lead">
+            Besides the entrepreneurial success, Olexandr is also an investor and advisor. His portfolio companies
+            represent key players of the startup industry, top incubator graduates and promising teams, such as Allset
+            (United States foodtech company, backed by Andreessen Horowitz), Foodfox (Russian foodtech company sold to
+            Yandex), Mobalytics (analytical e-gaming platform backed by GGV and Founders Fund), Rapyd (global fintech
+            solution valued at almost $800m), Reef Technologies (largest operator and owner of parking lots in the
+            Unites States). In these companies Olexandr is helping founders to manage the business, grow the sales,
+            update the processes, and do the fundraising. Besides these companies, Olexandr is also an investor in Zinvo
+            (US watches company), Instacarro (Brazilian car auction), Shedul (European booking platform).
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <section class="ppl">
+  <!--<section class="ppl">
     <div class="py-5 container">
       <div class="row">
         <div class="col-12 mb-4">
@@ -183,12 +216,12 @@ url('https://picsum.photos/1200/2300?grayscale')">
         </div>
       </div>
     </div>
-  </section>
-  <section class="strs-xts bg-dark">
+  </section>-->
+  <section id="_p-companies" class="strs-xts bg-dark">
     <div class="container py-5">
       <div class="row">
         <div class="col-12 mb-5">
-          <h1 class="text-center text-white">Stars & Exits highlights</h1>
+          <h1 class="text-center text-white">Portfolio companies</h1>
           <hr class="mx-auto w-25 border-white">
         </div>
       </div>
@@ -276,7 +309,7 @@ url('https://picsum.photos/1200/2300?grayscale')">
       </div>
     </div>
   </section>
-  <section class="fr">
+  <section id="_for" class="fr">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-sm-6 bg-sz-cvr bg-p-cntr" style="background-image:
@@ -285,22 +318,24 @@ url('https://picsum.photos/1200/2300?grayscale')">
           <div class="fr-content">
             <h3>For Investors</h3>
             <hr class="w-50">
-            <p class="pr-sm-5">We offer Venture Investors and Business Angels unique opportunities by joining our
-              successful
-              investments and sharing our expertise in venture capital financing, startup growth, and acceleration.</p>
-            <a href="google.com" target="_blank" class="btn bg-primary text-white btn-lg rounded-pill">Learn More</a>
+            <p class="pr-sm-5">We offer Venture Investors and Business Angels unique opportunities to audit and analyse
+              potential companies for investments. We can also consult portfolio companies on how to manage businesses
+              and grow the metrics. AE37 Global also offers opportunities to join and share investments into
+              fast-growing startups managed by best leaders. </p>
+            <!--            <a href="google.com" target="_blank" class="btn bg-primary text-white btn-lg rounded-pill">Learn More</a>-->
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-sm-6 p-4 p-sm-5 order-2 order-sm-0  ">
           <div class="fr-content">
-            <h3>For Investors</h3>
+            <h3>For startups</h3>
             <hr class="w-50">
-            <p class="pr-sm-5">We offer Venture Investors and Business Angels unique opportunities by joining our
-              successful
-              investments and sharing our expertise in venture capital financing, startup growth, and acceleration.</p>
-            <a href="google.com" target="_blank" class="btn bg-primary text-white btn-lg rounded-pill">Learn More</a>
+            <p class="pr-sm-5">We share our knowledge on how to grow business in different stages of development (from
+              idea generation to exit). We are well experienced and know how to boost growth. We can not only support
+              the business with consultancy, but also invest into the business to make it successful and
+              sustainable. </p>
+            <!--            <a href="google.com" target="_blank" class="btn bg-primary text-white btn-lg rounded-pill">Learn More</a>-->
           </div>
         </div>
         <div class="col-12 col-sm-6 bg-sz-cvr bg-p-cntr order-1 " style="background-image:
@@ -308,7 +343,7 @@ url('https://picsum.photos/1200/2300?grayscale')">
       </div>
     </div>
   </section>
-  <section class="prtfl-nws bg-dark">
+  <section id="_p-news" class="prtfl-nws bg-dark">
     <div class="py-5 container">
       <div class="row">
         <div class="col text-center text-white">
@@ -324,7 +359,8 @@ url('https://picsum.photos/1200/2300?grayscale')">
             <div class="card-body">
               <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
               <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
-              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede
+                violence and other
                 safety hazards.</p>
             </div>
           </a>
@@ -336,7 +372,8 @@ url('https://picsum.photos/1200/2300?grayscale')">
             <div class="card-body">
               <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
               <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
-              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede
+                violence and other
                 safety hazards.</p>
             </div>
           </a>
@@ -348,7 +385,8 @@ url('https://picsum.photos/1200/2300?grayscale')">
             <div class="card-body">
               <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
               <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
-              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede
+                violence and other
                 safety hazards.</p>
             </div>
           </a>
@@ -360,7 +398,8 @@ url('https://picsum.photos/1200/2300?grayscale')">
             <div class="card-body">
               <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
               <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
-              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede
+                violence and other
                 safety hazards.</p>
             </div>
           </a>
@@ -372,7 +411,8 @@ url('https://picsum.photos/1200/2300?grayscale')">
             <div class="card-body">
               <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
               <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
-              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede
+                violence and other
                 safety hazards.</p>
             </div>
           </a>
@@ -384,7 +424,8 @@ url('https://picsum.photos/1200/2300?grayscale')">
             <div class="card-body">
               <p class="card-text"><small class="text-muted">MONDAY, NOVEMBER 18</small></p>
               <h5 class="card-title mt-0">Israeli video analytics co Viisights raises $10m</h5>
-              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede violence and other
+              <p class="card-text">The company's AI-based security system recognizes behavior patterns that precede
+                violence and other
                 safety hazards.</p>
             </div>
           </a>
@@ -392,55 +433,44 @@ url('https://picsum.photos/1200/2300?grayscale')">
       </div>
     </div>
   </section>
-  <section class="cntcts py-5">
+  <section id="_contacts" class="cntcts py-5">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center mb-4">
           <h2>CONTACT US</h2>
           <hr class="w-25">
+          <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseForm"
+                  aria-expanded="false" aria-controls="collapseForm">
+            show form
+          </button>
         </div>
-        <div class="col-12 col-sm-8 offset-sm-2 text-center">
+        <!--<div class="col-12 col-sm-8 offset-sm-2 text-center">
           <h4>For Startups</h4>
-          <p>We are always looking for teams with strongly motivated co-founders with a mix of IT and business/sales experience and a vision of how to make significant impact in a large market.</p>
+          <p>We are always looking for teams with strongly motivated co-founders with a mix of IT and business/sales
+            experience and a vision of how to make significant impact in a large market.</p>
           <p><a href="mailto:">start@altair.vc</a></p>
-        </div>
-        <div class="col-12 offset-sm-4 col-sm-4 mt-5">
-          <h4 class="text-center">For other inquiries</h4>
-          <form>
+        </div>-->
+        <div class="col-12 offset-sm-4 col-sm-4 collapse" id="collapseForm">
+          <!--          <h4 class="text-center">For other inquiries</h4>-->
+          <form method="post" name="contact_form" action="https://formspree.io/xgevqodn">
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-              <label class="form-check-label" for="exampleRadios1">
-                Default radio
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Second default radio
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-              <label class="form-check-label" for="exampleRadios3">
-                Disabled radio
-              </label>
+              <label name="name" for="input-name">Name</label>
+              <input type="text" class="form-control" id="input-name">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <label for="input-comp">
+                Company</label>
+              <input name="company" type="text" class="form-control" id="input-comp" aria-describedby="emailHelp">
             </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="form-group">
+              <label for="input-email">
+                Email</label>
+              <input name="email" type="email" class="form-control" id="input-email" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="input-msg"> Message
+              </label>
+              <textarea name="msg" class="form-control" id="input-msg" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -449,7 +479,7 @@ url('https://picsum.photos/1200/2300?grayscale')">
     </div>
   </section>
 </main>
-<footer class="py-5 bg-primary text-success">
+<footer class="py-5 bg-success text-white">
   <div class="container-fluid">
     <div class="row text-center">
       <div class="col-12 col-md-4 text-md-left">
@@ -462,15 +492,16 @@ url('https://picsum.photos/1200/2300?grayscale')">
       <div class="col-12 col-md-4">
         <ul class="list-unstyled p-0 m-0 d-flex justify-content-center justify-content-md-end">
           <li>
-            <a  class="p-3" href="">fb</a>
+            <a class="p-3 text-white" href="">fb</a>
           </li>
           <li>
-            <a href=""  class="p-3">ln</a>
+            <a href="" class="p-3 text-white">ln</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </footer>
+
 </body>
 </html>
